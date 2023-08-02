@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/welcomeFragment"
+        android:icon="@drawable/ic_guide"
+        android:title="welcome"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/drawFragment"
+        android:icon="@drawable/ic_draw"
+        android:title="draw"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/guideFragment"
+        android:icon="@drawable/ic_face"
+        android:title="guide"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        />
+</menu>
