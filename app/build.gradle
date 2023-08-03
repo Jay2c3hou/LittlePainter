@@ -51,4 +51,5 @@ dependencies {
     //添加依赖
     implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
     implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
+    implementation 'com.airbnb.android:lottie:6.1.0'
 }
