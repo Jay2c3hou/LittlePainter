@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="TabItem">
-        <attr name="icon" format="reference"/>
+        <attr name="micon" format="reference"/>
         <attr name="select_icon" format="reference"/>
         <attr name="title" format="string|reference"/>
         <attr name="normal_color" format="color|reference"/>
         <attr name="select_color" format="color|reference"/>
         <attr name="badge" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ToolView">
+        <attr name="icon" format="reference"/>
+        <attr name="bg_icon" format="reference"/>
+        <attr name="icon_size" format="dimension"/>
+        <attr name="tool_type" format="enum">
+            <enum name="Move" value="1"/>
+            <enum name="Delete" value="2"/>
+            <enum name="Back" value="3"/>
+            <enum name="Curve" value="4"/>
+            <enum name="Eraser" value="5"/>
+            <enum name="Rectangle" value="6"/>
+            <enum name="Line" value="7"/>
+            <enum name="Triangle" value="8"/>
+            <enum name="Circle" value="9"/>
+            <enum name="Palette" value="10"/>
+            <enum name="Brush" value="11"/>
+        </attr>
     </declare-styleable>
 </resources>

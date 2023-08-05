@@ -88,7 +88,7 @@ class TabItem(context: Context, attrs: AttributeSet?): ViewGroup(context, attrs)
         context.obtainStyledAttributes(attrs, R.styleable.TabItem).apply {
             mTitle = getString(R.styleable.TabItem_title) ?: "Tab"
 
-            mIcon =  getDrawable(R.styleable.TabItem_icon)?: resources.getDrawable(R.drawable.ic_launcher_foreground,null)
+            mIcon =  getDrawable(R.styleable.TabItem_micon)?: resources.getDrawable(R.drawable.ic_launcher_foreground,null)
             mSelectIcon = getDrawable(R.styleable.TabItem_select_icon)?: resources.getDrawable(R.drawable.ic_launcher_foreground,null)
             mColor = getColor(R.styleable.TabItem_normal_color, Color.BLACK)
             mSelectColor = getColor(R.styleable.TabItem_select_color, mColor)
