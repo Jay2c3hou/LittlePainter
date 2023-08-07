@@ -31,7 +31,7 @@ class DrawViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun setLineWidth(size: Int) {
-        mLineWidth.postValue(size)
+        mLineWidth.postValue(getApplication<Application>().dp2px(size))
     }
 
     fun setColor(color: Int) {

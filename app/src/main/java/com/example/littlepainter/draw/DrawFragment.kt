@@ -32,6 +32,7 @@ class DrawFragment : Fragment() {
         binding.drawView.viewModel = mViewModel
         binding.drawView.lifeCycleOwner = viewLifecycleOwner
         binding.toolContainer.viewModel = mViewModel
+        binding.progressView.mDrawViewModel = mViewModel
 
         //配置colorRecyclerView
         binding.colorRecyclerView.apply {

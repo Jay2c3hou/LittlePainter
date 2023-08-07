@@ -182,11 +182,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        app:current_progress="20"
+        app:current_progress="10"
         app:layout_constraintBottom_toTopOf="@id/colorRecyclerView"
         app:layout_constraintEnd_toEndOf="@id/colorRecyclerView"
         app:layout_constraintStart_toStartOf="@id/colorRecyclerView"
-        app:max="50"
+        app:max="20"
         app:min="1" />
 
     <androidx.recyclerview.widget.RecyclerView
