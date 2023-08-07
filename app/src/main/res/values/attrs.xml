@@ -27,4 +27,10 @@
             <enum name="Brush" value="11"/>
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="ProgressView">
+        <attr name="min" format="integer"/>
+        <attr name="max" format="integer"/>
+        <attr name="current_progress" format="integer"/>
+    </declare-styleable>
 </resources>

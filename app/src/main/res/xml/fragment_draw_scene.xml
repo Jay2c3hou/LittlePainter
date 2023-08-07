@@ -6,13 +6,10 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="500">
         <KeyFrameSet>
         </KeyFrameSet>
-        <OnSwipe
-            motion:touchAnchorId="@+id/toolContainer"
-            motion:dragDirection="dragLeft"
-            motion:touchAnchorSide="left" />
+        <OnClick motion:targetId="@+id/toolContainer" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -36,6 +33,17 @@
             motion:layout_constraintHorizontal_bias="0.526"
             motion:layout_constraintStart_toStartOf="parent"
             android:id="@+id/recyclerView" />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/drawView"
+            android:layout_marginBottom="-80dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            motion:layout_constraintHorizontal_bias="0.526"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/colorRecyclerView" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">

@@ -6,5 +6,12 @@
     android:layout_marginTop="12dp"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp">
+    <View
+        android:id="@+id/view_border"
+        android:visibility="invisible"
+        android:background="@drawable/color_select_shape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

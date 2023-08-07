@@ -35,9 +35,9 @@ class GuideFragment : Fragment() {
                 binding.indicatorView.select(position)
             }
         })
-        binding.indicatorView.addPagerChangeCallBack = {page ->  
-            if (binding.viewpager.currentItem != page){
-                binding.viewpager.setCurrentItem(page,true)
+        binding.indicatorView.addPagerChangeCallBack = { page ->
+            if (binding.viewpager.currentItem != page) {
+                binding.viewpager.setCurrentItem(page, true)
             }
         }
     }
