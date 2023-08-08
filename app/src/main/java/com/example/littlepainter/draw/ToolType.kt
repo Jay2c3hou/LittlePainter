@@ -10,7 +10,7 @@ enum class ToolType(val value: Int) {
     Line(7),
     Triangle(8),
     Circle(9),
-    Palette(10),
+    Bezel(10),
     Brush(11),
     None(12)
 }

@@ -30,7 +30,7 @@
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:background="@null"
         android:ems="10"
         android:inputType="text"
@@ -82,7 +82,7 @@
             android:id="@+id/palette"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:icon="@drawable/ic_palette"
+            app:icon="@drawable/ic_bezel"
             app:layout_constraintEnd_toEndOf="@+id/rectangle"
             app:layout_constraintTop_toTopOf="@+id/brush"
             app:tool_type="Palette" />
