@@ -9,44 +9,39 @@ import com.example.littlepainter.draw.color.ColorModel
 import com.example.littlepainter.utils.ColorUtils
 import com.example.littlepainter.utils.dp2px
 
-class DrawViewModel(application: Application) : AndroidViewModel(application) {
+class DrawViewModel(application: Application):AndroidViewModel(application) {
     //工具类型
-    var mToolType = MutableLiveData(ToolType.None)
-
+    val mToolType = MutableLiveData(ToolType.None)
     //线条粗细
-    var mLineWidth = MutableLiveData(application.dp2px(5))
-
+    val mLineWidth = MutableLiveData(application.dp2px(1))
     //画笔颜色
-    var mPaintColor = MutableLiveData(Color.WHITE)
-
+    val mPaintColor = MutableLiveData(Color.WHITE)
     //颜色模型
-    var mColorModels = MutableLiveData(emptyList<ColorModel>())
+    val mColorModels  = MutableLiveData(emptyList<ColorModel>())
 
     init {
         loadColors(100)
     }
 
-    fun setType(type: ToolType) {
+    fun setType(type:ToolType){
         mToolType.postValue(type)
     }
-
-    fun setLineWidth(size: Int) {
+    fun setLineWidth(size:Int){
         mLineWidth.postValue(getApplication<Application>().dp2px(size))
     }
-
-    fun setColor(color: Int) {
+    fun setColor(color:Int){
         if (color == -1) {
             mPaintColor.postValue(Color.WHITE)
-        } else {
+        }else {
             mPaintColor.postValue(color)
         }
     }
 
     //创建颜色的模型对象
-    fun loadColors(count: Int) {
+    fun loadColors(count:Int){
         val models = arrayListOf<ColorModel>()
-        ColorUtils.getRandomColor(count).forEach {
-            models.add(ColorModel(it))
+        ColorUtils.getRandomColor(count).forEach { color ->
+            models.add(ColorModel(color))
         }
         mColorModels.postValue(models)
     }
